@@ -1,4 +1,4 @@
 Test file
 Line from feature branchпше 
-Test file
+Some additional changes from remote
 Test file
