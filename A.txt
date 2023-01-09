@@ -1,4 +1,4 @@
 Test file
-Test file
+Line from feature branchпше 
 Test file
 Test file
