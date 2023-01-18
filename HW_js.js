@@ -196,7 +196,7 @@ let resultKm
 
 if( resultKm = metr * 0.001){
     if(resultKm === 1){
-        console.log(resultKm + ' кілометр');
+        console.log(resultKm +' кілометр');
     } else if(resultKm > 1){
         console.log(resultKm +' кілометри' );
     } else  {
