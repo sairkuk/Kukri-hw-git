@@ -9,10 +9,10 @@
     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних) */
 
 const friends = 3;
-let hamburger = 3;
-let fries = 2;
+let hamburger = 4;
+let fries = 1;
 
-if( hamburger >=friends + 1 && fries >1 ){
+if( hamburger >=friends + 1 && fries >0 ){
 console.log('Ми поїли');
 } else {
     console.log('Ми йдемо в інше кафе');
@@ -78,6 +78,23 @@ if (month === 1){
 } else {
     console.log('You type the wrong month')
 };
+
+// Варіант 2 Зробив як просилося в задачі
+
+let season = 4;
+
+if (season === 1){
+    console.log('Now is season Winter');
+}else if ( season === 2 ){
+    console.log('Now is season Spring');
+}else if (season === 3 ){
+    console.log('Now is season Summer');
+}else if (season === 4){
+    console.log('Now is season Autumn');
+} else {
+    console.log('You type the wrong season')
+}
+
 
  /*
  5.  Задано 3 числа (a, b, c), які не рівні між собою.
@@ -191,18 +208,34 @@ switch (dayOnWeek) {
 */
  
 
-let metr = 700; 
-let resultKm 
+let metr = 1000; 
+let resultKm
 
 if( resultKm = metr * 0.001){
     if(resultKm === 1){
-        console.log(resultKm +' кілометр');
+
+        console.log(metr + ' метрів це ' + resultKm +' кілометр');
     } else if(resultKm > 1){
-        console.log(resultKm +' кілометри' );
+        console.log(metr + ' метрів це ' + resultKm +' кілометри' );
     } else  {
-        console.log(resultKm +' кілометра');
+        console.log(metr + ' метрів це ' + resultKm +' кілометра');
     }
 
 } else{
     console.log('Помилка, невірно введені дані');
+}
+
+// зробив такий варіант але розумію що не ісе одно не те, прохання розглянути на лекції
+
+const metr1 = 1000;
+const kilometr = metr1 * 0.001
+const stringKilometer = String(kilometr.toFixed(2))
+const lastSymbol = stringKilometer[stringKilometer.length -1]
+
+if (['0','5','6','7','8','9'].includes(lastSymbol)){
+     console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометрів' );
+} else if (['2','3','4'].includes(lastSymbol)){
+    console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометра' );
+} else {
+    console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометр' );
 }
