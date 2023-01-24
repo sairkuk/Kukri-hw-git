@@ -10,10 +10,10 @@
 
 const friends = 3;
 let hamburger = 4;
-let fries = 0;
+let fries = 1;
 
 function McDonald(hamburger,fries ) {
-    if( hamburger >=friends + 1 && fries >1 ){
+    if( hamburger >=friends + 1 && fries >0 ){
         console.log('Ми поїли');
         } else {
             console.log('Ми йдемо в інше кафе');
@@ -23,76 +23,112 @@ function McDonald(hamburger,fries ) {
 McDonald(hamburger,fries)
 
 
-const friends1 = 3;
-let hamburger1 = 4;
-let fries1 = 0;
-
-if( hamburger1 >=friends1 + 1 && fries1 >1 ){
-console.log('Ми поїли');
-} else {
-    console.log('Ми йдемо в інше кафе');
-};
-
-
 // 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно. Результат виводити в консоль.
 
-let priceCheck = 1001;
-if (priceCheck >= 1000 && priceCheck <= 1900 ){
-    console.log('значення ціни товару між 1000 та 1900');
-} else {
-    console.log('значення ціни товару по за межами 1000 та 1900');
-};
+
+const priceCheck = 101;
+
+function checkValueBetweenData(priceCheck) {
+    if (priceCheck >= 1000 && priceCheck <= 1900 ){
+        console.log('значення ціни товару між 1000 та 1900');
+    } else {
+        console.log('значення ціни товару по за межами 1000 та 1900');
+    };
+    
+}
+checkValueBetweenData(priceCheck)
+
 
 // 3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно. 
 // Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора. Результат виводити в консоль.
 
 
-let priceCheck1 = 1031;
-if (!(priceCheck1 >= 1000 && priceCheck1 <= 1900)){
-    console.log('значення ціни товару не знаходиться між 1000 та 1900');
-} else {
-    console.log('значення ціни товару між 1000 та 1900');
-};
 
+const priceCheck1 = 1;
 
-let priceCheck2 = 1009;
-
-if (priceCheck2 <= 1000 || priceCheck2 >= 1900 ){
-    console.log('значення ціни товару не знаходиться між 1000 та 1900');
-} else {
-    console.log('значення ціни товару між 1000 та 1900');
+function checkValueNotBetweenData(params) {
+    if (!(priceCheck1 >= 1000 && priceCheck1 <= 1900)){
+        console.log('значення ціни товару не знаходиться між 1000 та 1900');
+    } else {
+        console.log('значення ціни товару між 1000 та 1900');
+    };
 }
+checkValueNotBetweenData(priceCheck1)
+
+
+
+
+
+const priceCheck2 = 1000
+
+function checkValueNotBetweenData2(priceCheck2) {
+    if (priceCheck2 <= 1000 || priceCheck2 >= 1900 ){
+        console.log('значення ціни товару не знаходиться між 1000 та 1900');
+    } else {
+        console.log('значення ціни товару між 1000 та 1900');
+    }
+    
+}
+checkValueNotBetweenData2(priceCheck2)
+
 
 // 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if  Результат виводити в консоль.
 
-let month = 0;
-if (month === 1){
-    console.log('Now month is January');
-} else if ((month === 2)){
-    console.log('Now month is February');
-}else if (month === 3){
-    console.log('Now month is March');
-}else if (month === 4){
-    console.log('Now month is April');
-}else if (month === 5){
-    console.log('Now month is May');
-}else if (month === 6){
-    console.log('Now month is June');
-}else if (month === 7){
-    console.log('Now month is July');
-}else if (month === 8){
-    console.log('Now month is August');
-}else if (month === 9){
-    console.log('Now month is September');
-}else if (month === 10){
-    console.log('Now month is October');
-}else if (month === 11){
-    console.log('Now month is November');
-}else if (month === 12){
-    console.log('Now month is December');
-} else {
-    console.log('You type the wrong month')
-};
+
+const month = 3;
+
+function CheckMonth(month) {
+    if (month === 1){
+        console.log('Now month is January');
+    } else if ((month === 2)){
+        console.log('Now month is February');
+    }else if (month === 3){
+        console.log('Now month is March');
+    }else if (month === 4){
+        console.log('Now month is April');
+    }else if (month === 5){
+        console.log('Now month is May');
+    }else if (month === 6){
+        console.log('Now month is June');
+    }else if (month === 7){
+        console.log('Now month is July');
+    }else if (month === 8){
+        console.log('Now month is August');
+    }else if (month === 9){
+        console.log('Now month is September');
+    }else if (month === 10){
+        console.log('Now month is October');
+    }else if (month === 11){
+        console.log('Now month is November');
+    }else if (month === 12){
+        console.log('Now month is December');
+    } else {
+        console.log('You type the wrong month')
+    };
+}
+CheckMonth(month)
+
+
+const season = 3;
+
+function checkSeason(season) {
+    
+    if(season === 1){
+        console.log('Now is season Winter');
+    } else if(season === 2){
+        console.log('Now is season Spring');
+    } else if(season ===3){
+        console.log('Now is season Summer');
+    }else if(season === 4){
+        console.log('Now is season Autum');
+    } else{
+        console.log('You type the wrong season');
+    }
+}
+checkSeason(season)
+
+
+
 
  /*
  5.  Задано 3 числа (a, b, c), які не рівні між собою.
@@ -102,12 +138,14 @@ if (month === 1){
     Результат виводити в консоль. ;
     */
 
-let a = 6;
-let b = 19;
-let c = 22;
+const a = 6;
+const b = 19;
+const c = 11;
 let avg
 
-if (a > b) {
+function averagBetweenNumbers( a, b, c,) {
+
+    if (a > b) {
     if (a > c) {
       if (b > c)
         avg = b
@@ -131,49 +169,59 @@ if (a > b) {
       avg = b
       console.log('Cреднє за значення з трьох заданих чисел'+  ' = '  + avg )
   }
+}
+averagBetweenNumbers(a,b,c)
+
 
 // 6.  Задано номер дня тижня. За заданим номером вивести назву дня тижня використовуючи switch. Результат виводити в консоль.
 
-let dayOnWeek = '7';
+const setDay = '6';
 
-switch (dayOnWeek) {
-    case '1':
-        console.log('Понеділок');
-        break;
-    case '2':
-        console.log('Вівторок');
-        break;
-    case '3':
-        console.log('Середа');
-        break;
-    case '4':
-        console.log('Четверг');
-        break;
-    case '5':
-        console.log('Пятниця');
-        break;
-    case '6':
-        console.log('Субота');
-        break;
-    case '7':
-        console.log('Неділя');
-        break;
-
-    default:
-        console.log('Не вірно введені дані');
-        break;
+function dayOnWeek(setDay) {
+    switch (setDay) {
+        case '1':
+            console.log('Понеділок');
+            break;
+        case '2':
+            console.log('Вівторок');
+            break;
+        case '3':
+            console.log('Середа');
+            break;
+        case '4':
+            console.log('Четверг');
+            break;
+        case '5':
+            console.log('Пятниця');
+            break;
+        case '6':
+            console.log('Субота');
+            break;
+        case '7':
+            console.log('Неділя');
+            break;
+    
+        default:
+            console.log('Не вірно введені дані');
+            break;
+    }
 }
+dayOnWeek(setDay)
+
 
 /* 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
     Математичні операції для обчислення: "+", "-", "*", "/".
     Результат виводити в консоль. */
 
-    let number1 = 4;
-    let number2 = 5;
+    let number1 = 1;
+    let number2 = 4;
     let symboMath = '+'
+
+function mathematicalOperation(number1, number2, symboMath ) {
+
     switch (symboMath) {
         case '+':
-            console.log( number1 + number2);
+            console.log(number1 + number2);
             break;
         case '-':
             console.log(number1 - number2);
@@ -188,12 +236,19 @@ switch (dayOnWeek) {
             console.log('Не вірно введений математичний символ операції');
             break;
     }
+}
+mathematicalOperation(number1, number2, symboMath)
+   
 
    
  // 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
- let anyWord = 'Прислівʼя';
- console.log(anyWord.replace(/[аоуиіе]/g, ' ') );
+ const anyWord = 'Прислівʼя';
+
+ function processAnyWord(anyWord) {
+    console.log(anyWord.replace(/[аоуиіе]/g, ' ') );
+ }
+ processAnyWord(anyWord)
 
 
  /*9.  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
@@ -209,15 +264,41 @@ switch (dayOnWeek) {
 let metr = 700; 
 let resultKm 
 
-if( resultKm = metr * 0.001){
-    if(resultKm === 1){
-        console.log(resultKm +' кілометр');
-    } else if(resultKm > 1){
-        console.log(resultKm +' кілометри' );
-    } else  {
-        console.log(resultKm +' кілометра');
-    }
+function processMetrToKillometr(metr) {
 
-} else{
-    console.log('Помилка, невірно введені дані');
+    if( resultKm = metr * 0.001){
+        if(resultKm === 1){
+            console.log(resultKm +' кілометр');
+        } else if(resultKm > 1){
+            console.log(resultKm +' кілометри' );
+        } else  {
+            console.log(resultKm +' кілометра');
+        }
+    
+    } else{
+        console.log('Помилка, невірно введені дані');
+    }
 }
+processMetrToKillometr(metr)
+
+
+// Варіант 2
+
+const metr1 = 1045;
+const kilometr = metr1 * 0.001
+const stringKilometer = String(kilometr.toFixed(2))
+const lastSymbol = stringKilometer[stringKilometer.length -1]
+
+function processMetrToKillometr1(metr1) {
+    if (['0','5','6','7','8','9'].includes(lastSymbol)){
+        console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометрів' );
+   } else if (['2','3','4'].includes(lastSymbol)){
+       console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометра' );
+   } else {
+       console.log( metr1 + ' метрів це ' + stringKilometer + ' кілометр' );
+   }
+}
+processMetrToKillometr1(metr1)
+
+
+
